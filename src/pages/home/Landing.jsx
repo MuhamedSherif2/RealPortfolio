@@ -9,7 +9,7 @@ function Landing() {
     const contacts = [
         {
             id: 1,
-            link: "www.linkedin.com/in/mohammed-sherif-7314652b9https://www.linkedin.com/in/mohamed-sherif-mm?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            link: 'https://www.linkedin.com/in/mohamed-sherif-mm?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
             icon: <FaLinkedin className='rounded w-[30px] h-[30px]' />,
         },
         {
