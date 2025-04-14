@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import myImg from '../../assets/img/IMG-20240908-WA0092.png'
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { RiVercelFill } from 'react-icons/ri';
 
 function Landing() {
     const contacts = [
         {
             id: 1,
-            link: 'https://www.linkedin.com/in/mohamed-sherif-mm?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            link: "www.linkedin.com/in/mohammed-sherif-7314652b9https://www.linkedin.com/in/mohamed-sherif-mm?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             icon: <FaLinkedin className='rounded w-[30px] h-[30px]' />,
         },
         {
@@ -19,7 +20,7 @@ function Landing() {
         {
             id: 3,
             link: 'https://vercel.com/mohamed-sherifs-projects-147e3199',
-            icon: <FaLinkedin className='rounded w-[30px] h-[30px]' />,
+            icon: <RiVercelFill className='rounded w-[30px] h-[30px]' />,
         },
     ]
     return (
