@@ -48,10 +48,11 @@ function Footer() {
           <MdKeyboardDoubleArrowUp />
           Back To Top
         </a>
-        <div className='flex items-center justify-center gap-4'>
+
+        <div className='flex items-center flex-col md:flex-row justify-center gap-4'>
           {
             contact.map((link) =>
-              <div className=' ' key={link.id}>
+              <div className='' key={link.id}>
                 <Link to={link.link} target="_blank" className='text-white flex flex-col items-center justify-center w-[77px] h-[77px] p-2 rounded-full  hover:bg-[#D7D7D7] hover:text-black transition duration-500'>
                   <span className='text-[20px]'>{link.icon}</span>
                   <p>{link.name}</p>
@@ -60,6 +61,7 @@ function Footer() {
             )
           }
         </div>
+
         <div className='w-full h-[2px] bg-white my-4'></div>
         <div className='flex justify-center'>
           <h4 className='text-white text-[15px]'>© <span>MOHAMMED</span> 2024 \ Build With React-JS</h4>
