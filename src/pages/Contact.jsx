@@ -21,10 +21,10 @@ function Me() {
       <div className='container mx-auto'>
         <h2 className='pt-5 flex justify-center font-bold text-[25px]'>Contact Us</h2>
         <form className='mt-4 flex flex-col justify-center' ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" className="w-[400px] mt-3 mx-auto p-2 rounded-md outline-0" id="name" placeholder="full name"  />
-          <input type="text" name="phone-number" className="w-[400px] mt-3 mx-auto p-2 rounded-md outline-0" id="phone-number" placeholder="Your whatsApp" />
-          <input type="email" name="email" className="w-[400px] mt-3 mx-auto p-2 rounded-md outline-0" id="email" placeholder="name@example.com" />
-          <textarea name="message" className="w-[400px] mt-3 mx-auto p-2 rounded-md outline-0" id="message" placeholder="Let's work to gather"></textarea>
+          <input type="text" name="name" className="w-[290px] mdl:w-[400px] mt-3 mx-auto p-2 rounded-md outline-0" id="name" placeholder="full name"  />
+          <input type="text" name="phone-number" className="w-[290px] mdl:w-[400px] mt-3 mx-auto p-2 rounded-md outline-0" id="phone-number" placeholder="Your whatsApp" />
+          <input type="email" name="email" className="w-[290px] mdl:w-[400px] mt-3 mx-auto p-2 rounded-md outline-0" id="email" placeholder="name@example.com" />
+          <textarea name="message" className="w-[290px] mdl:w-[400px] mt-3 mx-auto p-2 rounded-md outline-0" id="message" placeholder="Let's work to gather"></textarea>
           <button className="mt-10 bg-black text-white px-3 py-1 w-[100px] mx-auto text-[20px] rounded font-semibold transition duration-500 hover:bg-white hover:text-black" type="submit">Send</button>
         </form>
       </div>
