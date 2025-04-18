@@ -15,7 +15,7 @@ function AllProjects() {
     const filteredProjects = products.filter(project => project.type === activeTab);
 
     return (
-        <section className={activeTab === 'javaScript'? 'w-full h-auto lg:h-screen bg-[#D7D7D7] pb-10' : 'w-full h-screen bg-[#D7D7D7] pb-10' }>
+        <section className={activeTab === 'javaScript'? 'w-full h-auto lg:h-screen bg-[#D7D7D7] pb-10' : 'w-full h-auto mdl:h-screen bg-[#D7D7D7] pb-10' }>
             <div className='container mx-auto pt-[100px]'>
                 <div className='flex justify-center gap-[40px]'>
                     <button onClick={() => setActiveTab('javaScript')}
