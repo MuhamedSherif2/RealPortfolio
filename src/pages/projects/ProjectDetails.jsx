@@ -10,8 +10,6 @@ function ProjectDetails() {
     const { products } = useContext(Context)
     const { id } = useParams();
     const filterProduct = products.filter((product) => product.id == id)
-    console.log(filterProduct)
-
     return (
         <section className="bg-[#D7D7D7] w-full h-screen">
             {

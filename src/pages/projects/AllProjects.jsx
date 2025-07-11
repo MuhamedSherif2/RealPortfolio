@@ -30,7 +30,7 @@ function AllProjects() {
                     </button>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
                     {filteredProjects.map((product) =>
                         <Link to={`/project/${product.id}`} key={product.id} onClick={() => handleSelectProject(product)} className='mx-auto' >
                             <img src={product.img} alt={product.name} className='w-[270px] h-[210px] md:w-[350px] md:h-[270px] mt-5' />
