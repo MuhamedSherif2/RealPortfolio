@@ -7,7 +7,7 @@ import alburak from './assets/img/projectIMG/alburak.png'
 import calculatorReact from './assets/img/projectIMG/react calc.png'
 import todoReact from './assets/img/projectIMG/React todo.png'
 import watchIt from './assets/img/projectIMG/watchIt.png'
-// import CRUD from './assets/img/projectIMG/crud'
+import CRUD from './assets/img/projectIMG/crud.png'
 
 export const Context = createContext();
 export const ContextProvider = ({ children }) => {
@@ -90,10 +90,10 @@ export const ContextProvider = ({ children }) => {
             id: 9,
             type: 'react',
             name: 'CRUD',
-            img: watchIt,
+            img: CRUD,
             description: 'WATCH IT Clone Build by JSX, Tailwind-CSS, React-js and some Libraries ex:Firebase and react-icons with Fetching Data by API and wrap it in Context-API File.',
-            vercelLink: 'https://egybest-clone-alpha.vercel.app/',
-            gitHupLink: 'https://github.com/MuhamedSherif2/WATCH-IT-Clone',
+            vercelLink: 'https://crud-ts-psi.vercel.app/',
+            gitHupLink: 'https://github.com/MuhamedSherif2/CRUD-ts',
         },
     ]
     useEffect(() => {
