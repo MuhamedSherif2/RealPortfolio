@@ -27,7 +27,7 @@ function ProjectDetails() {
                                 <a href={item.vercelLink} target="_blank">
                                     <Button name='Live Demo' icon={<FaLocationArrow />} bg={'bg-[#ff0000]'} hoverBg={'bg-[black]'} />
                                 </a>
-                                <a href={item.vercelLink} target="_blank">
+                                <a href={item.gitHupLink} target="_blank">
                                     <Button name='Code' icon={<FaCode />} bg={'bg-[#008000]'} hoverBg={'bg-[#000000]'} mt={'mt-2'} />
                                 </a>
                             </div>

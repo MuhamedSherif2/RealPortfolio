@@ -23,6 +23,7 @@ function AllProjects() {
                     >
                         JavaScript
                     </button>
+                    
                     <button onClick={() => setActiveTab('react')}
                         className={activeTab === 'react' ? 'active  text-white bg-black text-[20px] rounded-md py-2 px-3' : 'text-black bg-white text-[20px] rounded-md py-2 px-3'}
                     >
