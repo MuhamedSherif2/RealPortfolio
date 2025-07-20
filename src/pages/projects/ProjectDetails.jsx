@@ -23,14 +23,38 @@ function ProjectDetails() {
                         <div className='mt-5'>
                             <h3 className='font-bold text-[30px]'>{item.name}</h3>
                             <p>{item.description}</p>
-                            <div className="flex flex-col mdl:flex-row mdl:gap-7 items-center justify-center mt-3 ">
-                                <a href={item.vercelLink} target="_blank">
-                                    <Button name='Live Demo' icon={<FaLocationArrow />} bg={'bg-[#ff0000]'} hoverBg={'bg-[black]'} />
-                                </a>
-                                <a href={item.gitHupLink} target="_blank">
-                                    <Button name='Code' icon={<FaCode />} bg={'bg-[#008000]'} hoverBg={'bg-[#000000]'} mt={'mt-2'} />
-                                </a>
-                            </div>
+                            {
+                                item.type === 'MERN Stack' ?
+                                    <div className="flex flex-col mdl:flex-row mdl:gap-7 items-center justify-center mt-5">
+                                        <a href={item.vercelLink} target="_blank">
+                                            <Button icon={<FaLocationArrow />} className={'bg-[#ff0000] hover:bg-[black] hover:text-white '}>
+                                                Live Demo
+                                            </Button>
+                                        </a>
+                                        <a href={item.frontgitHupLink} target="_blank">
+                                            <Button icon={<FaCode />} className={'bg-[#008000] hover:bg-[#000000] hover:text-white  mt-2 '}>
+                                                FrontEnd Code
+                                            </Button>
+                                        </a>
+                                        <a href={item.backgitHupLink} target="_blank">
+                                            <Button icon={<FaCode />} className={'bg-[#008000] hover:bg-[#000000] hover:text-white  mt-2 '}>
+                                                BackEnd Code
+                                            </Button>
+                                        </a>
+                                    </div> :
+                                    <div className="flex flex-col mdl:flex-row mdl:gap-7 items-center justify-center mt-3 ">
+                                        <a href={item.vercelLink} target="_blank">
+                                            <Button icon={<FaLocationArrow />} className={'bg-[#ff0000] hover:bg-[black] hover:text-white '}>
+                                                Live Demo
+                                            </Button>
+                                        </a>
+                                        <a href={item.frontgitHupLink} target="_blank">
+                                            <Button icon={<FaCode />} className={'bg-[#008000] hover:bg-[#000000] hover:text-white  mt-2 '}>
+                                                FrontEnd Code
+                                            </Button>
+                                        </a>
+                                    </div>
+                            }
                         </div>
                     </div>
                 ))

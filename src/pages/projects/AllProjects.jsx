@@ -1,10 +1,12 @@
 import React, { useContext, useState } from 'react'
 import { Context } from '../../Context'
 import { Link } from 'react-router-dom';
+import Button from '../../component/Button';
 
 function AllProjects() {
-    const [activeTab, setActiveTab] = useState('javaScript');
     const { products, setSelectProduct } = useContext(Context);
+    const productTypes = [...new Set(products.map(p => p.type))];
+    const [activeTab, setActiveTab] = useState(productTypes[0] || 'javaScript');
     const handleSelectProject = (product) => {
         setSelectProduct(product)
     }
@@ -15,20 +17,17 @@ function AllProjects() {
     const filteredProjects = products.filter(project => project.type === activeTab);
 
     return (
-        <section className={activeTab === 'javaScript'? 'w-full h-auto lg:h-screen bg-[#D7D7D7] pb-10' : 'w-full h-auto mdl:h-screen bg-[#D7D7D7] pb-10' }>
+        <section className='py-10 min-h-screen w-full bg-[#D7D7D7]'>
             <div className='container mx-auto pt-[100px]'>
-                <div className='flex justify-center gap-[40px]'>
-                    <button onClick={() => setActiveTab('javaScript')}
-                        className={activeTab === 'javaScript' ? 'active bg-black text-white text-[20px] rounded-md py-2 px-3 transition duration-300' : 'text-black bg-white text-[20px] rounded-md py-2 px-3 transition duration-300'}
-                    >
-                        JavaScript
-                    </button>
-                    
-                    <button onClick={() => setActiveTab('react')}
-                        className={activeTab === 'react' ? 'active  text-white bg-black text-[20px] rounded-md py-2 px-3' : 'text-black bg-white text-[20px] rounded-md py-2 px-3'}
-                    >
-                        React
-                    </button>
+                <div className='flex justify-center'>
+                    {
+                        productTypes.map((type) => (
+                            <Button key={type} onClick={() => setActiveTab(type)} className={activeTab === type ? ' bg-black text-white' : 'text-black bg-white'} >
+                                {type}
+                            </Button>
+                        ))
+                    }
+
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
@@ -45,5 +44,4 @@ function AllProjects() {
 }
 
 export default AllProjects
-
 

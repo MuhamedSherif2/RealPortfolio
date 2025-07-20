@@ -1,7 +1,9 @@
-function Button(props) {
+function Button({children, className, icon, ...rest}) {
     return (
-        <button className={`w-[150px] py-[6px] px-3 ${props.bg} ${props.mt} mdl:mt-0 rounded mx-auto transition duration-300  hover:text-white hover:${props.hoverBg}`}>
-            <span className="flex items-center gap-1 text-[20px] font-semibold text-center justify-center">{props.name}{props.icon}</span>
+        <button className={`py-2 px-4 mdl:mt-0 rounded-md mx-auto flex items-center gap-1 text-[20px] font-semibold text-center justify-center
+        transition duration-300 ${className} `}
+            {...rest}>
+                {children}{icon}
         </button>
     )
 }
