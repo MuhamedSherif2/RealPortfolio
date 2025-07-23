@@ -11,7 +11,7 @@ function ProjectDetails() {
     const { id } = useParams();
     const filterProduct = products.filter((product) => product.id == id)
     return (
-        <section className="bg-[#D7D7D7] w-full h-screen">
+        <section className="bg-[#D7D7D7] w-full min-h-screen">
             {
                 filterProduct.map((item) => (
                     <div key={item.id} className='mx-auto w-[320px] md:w-[600px] text-center pt-[100px]'>
