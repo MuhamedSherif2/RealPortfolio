@@ -18,7 +18,7 @@ function Footer() {
     },
     {
       id: 2,
-      link: 'https://www.linkedin.com/in/mohammed-sherif-7314652b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      link: 'https://www.linkedin.com/in/muhamed-mern',
       icon: <FaLinkedin />,
       name: 'LinkedIn'
     },
